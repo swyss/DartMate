@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.funny.dartmade"
+    namespace = "com.funny.dartmate"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.funny.dartmade"
+        applicationId = "com.funny.dartmate"
         minSdk = 30
         targetSdk = 35
         versionCode = 1
@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -40,8 +43,9 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)

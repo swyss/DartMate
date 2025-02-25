@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.funny.dartmate.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_game"
+            app:destination="@id/navigation_game" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_game"
+        android:name="com.funny.dartmate.ui.game.GameFragment"
+        android:label="@string/title_game"
+        tools:layout="@layout/fragment_game"/>
+
+    <fragment
+        android:id="@+id/navigation_analyse"
+        android:name="com.funny.dartmate.ui.analyse.AnalyseFragment"
+        android:label="@string/title_analyse"
+        tools:layout="@layout/fragment_analyse" />
+
+
+</navigation>

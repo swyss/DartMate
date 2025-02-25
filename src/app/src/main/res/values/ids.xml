@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editPlayerOne" type="id" />
+    <item name="editPlayerTwo" type="id" />
+    <item name="checkBoxAI" type="id" />
+    <item name="spinnerAILevel" type="id" />
+    <item name="textViewSets" type="id" />
+    <item name="spinnerSets" type="id" />
+    <item name="buttonStartMatch" type="id" />
+</resources>

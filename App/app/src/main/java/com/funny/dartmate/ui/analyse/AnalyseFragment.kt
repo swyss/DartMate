@@ -1,0 +1,42 @@
+package com.funny.dartmate.ui.analyse
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.funny.dartmate.databinding.FragmentAnalyseBinding
+
+class AnalyseFragment : Fragment() {
+
+    private var _binding: FragmentAnalyseBinding? = null
+
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val analyseViewModel =
+            ViewModelProvider(this).get(AnalyseViewModel::class.java)
+
+        _binding = FragmentAnalyseBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        val textView: TextView = binding.textNotifications
+        analyseViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
+        return root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}

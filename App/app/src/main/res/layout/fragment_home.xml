@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editPlayerOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 1 Name" />
+
+        <EditText
+            android:id="@+id/editPlayerTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 2 Name" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play against AI" />
+
+        <Spinner
+            android:id="@+id/spinnerAILevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/ai_options" />
+
+        <Spinner
+            android:id="@+id/spinnerSets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/set_options" />
+
+        <Button
+            android:id="@+id/buttonStartMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Match" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

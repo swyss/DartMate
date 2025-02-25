@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchSettingsActivity"
+    android:padding="16dp">
+
+    <!-- Spieler 1 Name -->
+    <EditText
+        android:id="@+id/editPlayerOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Player 1 Name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Spieler 2 Name -->
+    <EditText
+        android:id="@+id/editPlayerTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Player 2 Name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPlayerOne"
+        android:layout_marginTop="16dp" />
+
+    <!-- KI Gegner Checkbox -->
+    <CheckBox
+        android:id="@+id/checkBoxAI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play against AI"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPlayerTwo"
+        android:layout_marginTop="16dp" />
+
+    <!-- KI Schwierigkeitsgrad -->
+    <Spinner
+        android:id="@+id/spinnerAILevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxAI"
+        android:layout_marginTop="16dp"
+        android:entries="@array/ai_difficulty"
+        android:visibility="gone" />
+
+    <!-- Anzahl Sets -->
+    <TextView
+        android:id="@+id/textViewSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best of Sets"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerAILevel"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerSets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSets"
+        android:layout_marginTop="8dp"
+        android:entries="@array/set_options" />
+
+    <!-- Start-Button -->
+    <Button
+        android:id="@+id/buttonStartMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Match"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerSets"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
