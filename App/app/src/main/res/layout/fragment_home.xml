@@ -16,7 +16,7 @@
             android:id="@+id/editPlayerOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Player 1 Name" />
+            android:hint="@string/player_1_name" />
 
         <EditText
             android:id="@+id/editPlayerTwo"
