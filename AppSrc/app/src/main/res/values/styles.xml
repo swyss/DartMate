@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DartButtonStyle" parent="Widget.AppCompat.Button">
+        <!-- Hintergrundfarbe -->
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <!-- Textgröße -->
+        <item name="android:textSize">32sp</item>
+        <!-- Schriftstil -->
+        <item name="android:textStyle">bold</item>
+        <!-- Textfarbe -->
+        <item name="android:textColor">@android:color/black</item>
+
+        <item name="android:layout_columnSpan"> 1</item>
+        <item name="android:layout_rowWeight"> 1</item>
+
+        <!-- Abgerundete Ecken für ein moderneres Design -->
+        <item name="android:backgroundTint">#FF9800</item>
+        <!-- Verhindert automatische Großschreibung -->
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

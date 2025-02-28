@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#F44336">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/textViewPlayerONE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Player ONE"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:background="#2196F3"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txtPointPlayerONE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="501"
+                    android:textAlignment="center"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txtLegsPlayerONE"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Legs: 0"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/txtSetsPlayerONE"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sets: 0"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="9">
+
+                <Button
+                    android:id="@+id/button20"
+                    style="@style/DartButtonStyle"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="@string/_20"/>
+
+                <Button
+                    android:id="@+id/buttonD20"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_20"/>
+
+                <Button
+                    android:id="@+id/buttonT20"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_20"/>
+
+                <Button
+                    android:id="@+id/button19"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_19"/>
+
+                <Button
+                    android:id="@+id/buttonD19"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_19"/>
+
+                <Button
+                    android:id="@+id/buttonT19"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_19"/>
+
+                <Button
+                    android:id="@+id/button18"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_18"/>
+
+                <Button
+                    android:id="@+id/buttonD18"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_18"/>
+
+                <Button
+                    android:id="@+id/buttonT18"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_18"/>
+
+                <Button
+                    android:id="@+id/button17"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_17"/>
+
+                <Button
+                    android:id="@+id/buttonD17"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_17"/>
+
+                <Button
+                    android:id="@+id/buttonT17"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_17"/>
+
+                <Button
+                    android:id="@+id/button16"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_16"/>
+
+                <Button
+                    android:id="@+id/buttonD16"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_16"/>
+
+                <Button
+                    android:id="@+id/buttonT16"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_16"/>
+
+                <Button
+                    android:id="@+id/button15"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_15"/>
+
+                <Button
+                    android:id="@+id/buttonD15"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_15"/>
+
+                <Button
+                    android:id="@+id/buttonT15"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_15"/>
+
+                <Button
+                    android:id="@+id/button14"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_14"/>
+
+                <Button
+                    android:id="@+id/buttonD14"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_14"/>
+
+                <Button
+                    android:id="@+id/buttonT14"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_14"/>
+
+                <Button
+                    android:id="@+id/button13"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_13"/>
+
+                <Button
+                    android:id="@+id/buttonD13"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_13"/>
+
+                <Button
+                    android:id="@+id/buttonT13"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_13"/>
+
+                <Button
+                    android:id="@+id/button12"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_12"/>
+
+                <Button
+                    android:id="@+id/buttonD12"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_12"/>
+
+                <Button
+                    android:id="@+id/buttonT12"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_12"/>
+
+                <Button
+                    android:id="@+id/button11"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_11"/>
+
+                <Button
+                    android:id="@+id/buttonD11"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_11"/>
+
+                <Button
+                    android:id="@+id/buttonT11"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_11"/>
+
+                <Button
+                    android:id="@+id/button10"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_10"/>
+
+                <Button
+                    android:id="@+id/buttonD10"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_10"/>
+
+                <Button
+                    android:id="@+id/buttonT10"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_10"/>
+
+                <Button
+                    android:id="@+id/button9"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_9"/>
+
+                <Button
+                    android:id="@+id/buttonD9"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_9"/>
+
+                <Button
+                    android:id="@+id/buttonT9"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_9"/>
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_8"/>
+
+                <Button
+                    android:id="@+id/buttonD8"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_8"/>
+
+                <Button
+                    android:id="@+id/buttonT8"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_8"/>
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_7"/>
+
+                <Button
+                    android:id="@+id/buttonD7"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_7"/>
+
+                <Button
+                    android:id="@+id/buttonT7"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_7"/>
+
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_6"/>
+
+                <Button
+                    android:id="@+id/buttonD6"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_6"/>
+
+                <Button
+                    android:id="@+id/buttonT6"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_6"/>
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_5"/>
+
+                <Button
+                    android:id="@+id/buttonD5"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_5"/>
+
+                <Button
+                    android:id="@+id/buttonT5"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_5"/>
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_4"/>
+
+                <Button
+                    android:id="@+id/buttonD4"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_4"/>
+
+                <Button
+                    android:id="@+id/buttonT4"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_4"/>
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_3"/>
+
+                <Button
+                    android:id="@+id/buttonD3"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_3"/>
+
+                <Button
+                    android:id="@+id/buttonT3"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_3"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_2"/>
+
+                <Button
+                    android:id="@+id/buttonD2"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_2"/>
+
+                <Button
+                    android:id="@+id/buttonT2"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_2"/>
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_1"/>
+
+                <Button
+                    android:id="@+id/buttonD1"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/d_1"/>
+
+                <Button
+                    android:id="@+id/buttonT1"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/t_1"/>
+
+                <Button
+                    android:id="@+id/button0"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_0"/>
+
+                <Button
+                    android:id="@+id/button25"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_25"/>
+
+                <Button
+                    android:id="@+id/button50"
+                    style="@style/DartButtonStyle"
+                    android:text="@string/_50"/>
+
+
+            </GridLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#9C27B0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/textViewPlayerTWO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Player TWO"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:background="#009688"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txtPointPlayerTWO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="501"
+                    android:textAlignment="center"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txtLegsPlayerTWO"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Legs: 0"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/txtSetsPlayerTWO"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sets: 0"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
